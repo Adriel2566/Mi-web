@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Rectángulo con CSS</title>
+  <style>
+    .rectangulo {
+      --altura: 100px; /* Variable local para la altura */
+      height: var(--altura);
+      width: calc(var(--altura) * 2);
+      border: 2px solid black; /* Solo borde, sin color de relleno */
+    }
+  </style>
+</head>
+<body>
+  <div class="rectangulo"></div>
+</body>
+</html>
