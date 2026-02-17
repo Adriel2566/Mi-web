@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Fuentes personalizadas</title>
+
+  <style>
+    
+    @font-face {
+      font-family: 'FuenteTitulo';
+      src: url('titulo.ttf');
+    }
+
+    
+    @font-face {
+      font-family: 'FuenteTexto';
+      src: url('texto.ttf');
+    }
+
+    
+    .titulo {
+      font-family: 'FuenteTitulo';
+      font-size: 40px;
+      font-weight: bold;
+    }
+
+    
+    .texto {
+      font-family: 'FuenteTexto';
+      font-size: 18px;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1 class="titulo">Mi página con fuentes personalizadas</h1>
+
+  <p class="texto">
+    Aquí puedes escribir el texto que quieras.  
+    Esta parte usa la segunda tipografía que has cargado con @font-face.
+  </p>
+
+</body>
+</html>

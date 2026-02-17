@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>FAQ sin JavaScript</title>
+
+    <style>
+        details {
+            padding: 10px 0;
+        }
+
+        summary {
+            font-size: 18px;
+            cursor: pointer;
+            list-style: none;
+        }
+
+        summary::marker {
+            display: none;
+        }
+
+        /* Simular + y - */
+        summary::before {
+            content: "+ ";
+            font-weight: bold;
+        }
+
+        details[open] summary::before {
+            content: "- ";
+        }
+
+        p {
+            margin: 10px 0 0 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <details>
+        <summary>¿Qué métodos de pago se ofrecen?</summary>
+        <p>Aceptamos varios métodos de pago dependiendo de tu región.</p>
+    </details>
+
+    <details open>
+        <summary>¿Cómo puedo cambiarme a un plan diferente?</summary>
+        <p>
+            Puedes cambiarte a un nuevo plan en cualquier momento; para ello, entra en la página de
+            facturación de tu cuenta. Selecciona el plan al que deseas cambiarte y podrás empezar a
+            usar las nuevas funciones de inmediato.
+        </p>
+    </details>
+
+    <details>
+        <summary>¿Puedo optar por comprar créditos?</summary>
+        <p>Sí, puedes comprar créditos si prefieres pagar solo por los envíos que realices.</p>
+    </details>
+
+    <details>
+        <summary>¿Hay precios especiales para quienes envían grandes volúmenes de correos electrónicos?</summary>
+        <p>Ofrecemos descuentos para grandes volúmenes según el plan contratado.</p>
+    </details>
+
+    <details>
+        <summary>¿Qué sucede si llego al límite de envíos o contactos?</summary>
+        <p>Si alcanzas el límite, podrás ampliar tu plan o esperar al siguiente ciclo de facturación.</p>
+    </details>
+
+</body>
+</html>
