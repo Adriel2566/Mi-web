@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Atrapar al monstruo</title>
+
+    <style>
+        .marco {
+            border: 6px dashed rgb(0, 81, 255);   
+            padding: 20px;
+            display: inline-block;
+            position: relative;
+        }
+
+        
+        .marco::before,
+        .marco::after {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border: 6px solid rgb(0, 81, 255);
+        }
+
+       
+        .marco::before {
+            top: -6px;
+            left: -6px;
+            border-right: none;
+            border-bottom: none;
+        }
+
+        
+        .marco::after {
+            bottom: -6px;
+            right: -6px;
+            border-left: none;
+            border-top: none;
+        }
+
+        img {
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="marco">
+        <img src="https://andros.dev/static/img/courses/css/activities/10-monstruo.png" alt="Monstruo">
+    </div>
+
+</body>
+</html>
