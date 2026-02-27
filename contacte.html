@@ -2,8 +2,8 @@
 <html lang="ca">
 <head>
     <meta charset="UTF-8">
-    <title>Activitats</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Contacte</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -20,25 +20,20 @@
 </header>
 
 <main>
-    <h2>Índex d'activitats</h2>
+    <h2>Formulari de contacte</h2>
 
-    <table>
-        
-        <tr>
-            <td>HTML</td>
-            <td>acts</td>
-            <td><a href="#">Veure</a></td>
-        </tr>
-       
-       
-        <tr>
-            <td>CSS</td>
-            <td>acts</td>
-            <td><a href="#">Veure</a></td>
-        </tr>
-       
-       
-    </table>
+    <form action="#" method="post">
+        <label>Nom:</label>
+        <input type="text" name="nom" required>
+
+        <label>Email:</label>
+        <input type="email" name="email" required>
+
+        <label>Missatge:</label>
+        <textarea name="missatge" required></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
 </main>
 
 <footer>
